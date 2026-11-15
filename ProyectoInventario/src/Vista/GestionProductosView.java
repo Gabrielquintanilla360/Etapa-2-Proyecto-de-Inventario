@@ -148,7 +148,16 @@ public class GestionProductosView extends JFrame {
                 cargarTabla(filtro);
             }
         });
-
+        
+        //Limpiar campos
+        JButton btnLimpiar = new JButton("Limpiar");
+        btnLimpiar.setBounds(75, 445, 125, 32);
+        btnLimpiar.setFocusPainted(false);
+        add(btnLimpiar);
+        
+        //Evento
+        btnLimpiar.addActionListener(e -> limpiar());
+        
         //Registrar producto
         btnGuardar.addActionListener(e -> {
             try {
