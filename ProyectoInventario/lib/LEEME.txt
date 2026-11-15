@@ -1,0 +1,15 @@
+Dependencias MongoDB Java Driver 5.14.0
+
+Incluye:
+- mongodb-driver-sync-5.14.0.jar
+- mongodb-driver-core-5.14.0.jar
+- bson-5.14.0.jar
+
+En NetBeans 22 (proyecto Ant):
+1. Extrae los JAR de esta carpeta.
+2. En Projects, haz clic derecho en Libraries del proyecto clonado.
+3. Selecciona Add JAR/Folder.
+4. Selecciona los tres archivos .jar y acepta.
+5. Ejecuta Clean and Build.
+
+No cambies los archivos Java para resolver imports rojos hasta comprobar que las bibliotecas quedaron agregadas.
