@@ -10,6 +10,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
+import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class GestionProductosView extends JFrame {
 
@@ -166,9 +167,18 @@ public class GestionProductosView extends JFrame {
 
                 double p = Double.parseDouble(precioStr);
                 int q = Integer.parseInt(cantidadStr);
-
+                
+                //validar que el precio sea mayor que 0
+                if (p<=0){
+                    JOptionPane.showMessageDialog(null, "El precio debe ser mayor a 0.");
+                    return;
+                }
+                //validar que la cantidad no sea negativa ni 0 al ingresarla por primera vez
                 if(q < 0) {
-                    JOptionPane.showMessageDialog(null, "La cantidad inicial no puede ser negativa.");
+                    JOptionPane.showMessageDialog(null, "La cantidad no puede ser negativa.");
+                    return;
+                    }else if (q == 0) {
+                    JOptionPane.showMessageDialog(null, "La cantidad no puede ser 0 inicialmente.");
                     return;
                 }
 
@@ -194,7 +204,18 @@ public class GestionProductosView extends JFrame {
                 String cat = txtCategoria.getText().trim();
                 double p = Double.parseDouble(txtPrecio.getText().trim());
                 int q = Integer.parseInt(txtCantidad.getText().trim());
-
+                
+                //validar que el precio sea mayor que 0
+                if (p<=0){
+                    JOptionPane.showMessageDialog(null, "El precio debe ser mayor a 0.");
+                    return;
+                }
+                //validar que la cantidad no sea negativa, al modificar si puede ser 0
+                if(q < 0) {
+                    JOptionPane.showMessageDialog(null, "La cantidad no puede ser negativa.");
+                    return;
+                }
+                
                 Producto prod = new Producto(c, n, d, cat, p, q);
                 if(dao.modificarProducto(prod)) {
                     JOptionPane.showMessageDialog(null, "¡Información actualizada correctamente!");
