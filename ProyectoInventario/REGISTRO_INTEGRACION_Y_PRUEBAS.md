@@ -1,4 +1,4 @@
-#REGISTRO DE INTEGRACIÓN Y PRUEBAS
+REGISTRO DE INTEGRACIÓN Y PRUEBAS
 
 # 1. Configuración del entorno de desarrollo
 
