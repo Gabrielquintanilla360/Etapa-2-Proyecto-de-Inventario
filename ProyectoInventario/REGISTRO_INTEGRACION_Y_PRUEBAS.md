@@ -52,10 +52,10 @@ Se realizaron pruebas de ejecución del Sistema de Gestión de Inventario despu�
 
 Durante las pruebas se verificaron los siguientes aspectos:
 
-- **Inicio de sesión:** se comprobó que la ventana de acceso se mostrara correctamente y permitiera ingresar al sistema.
-- **Menú principal:** se verificó el acceso al menú principal después de iniciar sesión.
-- **Gestión de productos:** se comprobó que el módulo pudiera abrirse correctamente.
-- **Control de existencias y reportes:** se verificó el acceso al módulo correspondiente.
+- Inicio de sesión: se comprobó que la ventana de acceso se mostrara correctamente y permitiera ingresar al sistema.
+- Menú principal: se verificó el acceso al menú principal después de iniciar sesión.
+- Gestión de productos: se comprobó que el módulo pudiera abrirse correctamente.
+- Control de existencias y reportes: se verificó el acceso al módulo correspondiente.
 
 Como resultado, se confirmó que la aplicación podía ejecutarse correctamente en el nuevo equipo y que era posible acceder a los módulos principales del sistema.
 
