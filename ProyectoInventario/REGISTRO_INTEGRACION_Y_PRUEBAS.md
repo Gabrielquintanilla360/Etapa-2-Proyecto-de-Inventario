@@ -59,4 +59,19 @@ Durante las pruebas se verificaron los siguientes aspectos:
 
 Como resultado, se confirmó que la aplicación podía ejecutarse correctamente en el nuevo equipo y que era posible acceder a los módulos principales del sistema.
 
-Estas pruebas permitieron comprobar la correcta configuración del entorno y la ejecución general del programa.
+Estas pruebas permitieron comprobar la correcta configuración del entorno y la ejecución general del programa
+7. Verificación de persistencia en MongoDB
+
+Se realizaron pruebas de entradas y salidas de productos para comprobar
+que las cantidades se actualizaran correctamente en MongoDB.
+
+Después de registrar los movimientos, se verificó que la colección
+productos reflejara la cantidad disponible actualizada. También se
+comprobó que la información permaneciera guardada después de cerrar
+y volver a ejecutar el sistema.
+
+Resultado: prueba satisfactoria. El producto 001 (Arroz) conserva
+una existencia final de 3 unidades, tanto en la aplicación como
+en MongoDB Compass.
+
+Evidencia: EVIDENCIAS_INTEGRACION/06_Existencias_actualizadas_MongoDB.png
