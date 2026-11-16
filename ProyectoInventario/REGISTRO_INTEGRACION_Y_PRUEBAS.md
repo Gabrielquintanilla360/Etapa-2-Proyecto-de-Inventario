@@ -46,3 +46,17 @@ La configuración del entorno de desarrollo y la incorporación de las bibliotec
 - Comprobar la conexión y persistencia de información en MongoDB.
 - Realizar pruebas finales de integración.
 - Mantener organizado el repositorio y registrar los cambios mediante GitHub.
+# 7. Pruebas de funcionamiento en el nuevo equipo
+
+Se realizaron pruebas de ejecución del Sistema de Gestión de Inventario después de configurar el entorno de desarrollo en un nuevo equipo.
+
+Durante las pruebas se verificaron los siguientes aspectos:
+
+- **Inicio de sesión:** se comprobó que la ventana de acceso se mostrara correctamente y permitiera ingresar al sistema.
+- **Menú principal:** se verificó el acceso al menú principal después de iniciar sesión.
+- **Gestión de productos:** se comprobó que el módulo pudiera abrirse correctamente.
+- **Control de existencias y reportes:** se verificó el acceso al módulo correspondiente.
+
+Como resultado, se confirmó que la aplicación podía ejecutarse correctamente en el nuevo equipo y que era posible acceder a los módulos principales del sistema.
+
+Estas pruebas permitieron comprobar la correcta configuración del entorno y la ejecución general del programa.
